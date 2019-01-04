@@ -72,12 +72,8 @@ void MagicSquares::printMagicSquares(int n) { //method for finding magic squares
 
     }
     for (int k = 0; k < n*n; k++) {//first populates magic square in increasing order
-        if (k != 0) {
-            matrixArray.insert(matrixArray.end(), matrixArray.at(k-1) + 1);
-        }
-        else {
-            matrixArray.insert(matrixArray.end(), 1);
-        }
+      
+        matrixArray.push_back(k+1);
     }
 
 
