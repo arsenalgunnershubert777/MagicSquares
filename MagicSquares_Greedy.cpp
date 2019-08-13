@@ -94,6 +94,7 @@ void MagicSquares_Greedy::runComputations() { //method for finding magic squares
     gettimeofday(total1, NULL);//first time stamp for initialization
     myfile << "finish: sec: " << total1->tv_sec << " usec: " << total1->tv_usec << endl;
     cout << "finish: sec: " << total1->tv_sec << " usec: " << total1->tv_usec << endl;
+    delete total1;
 
 
 
